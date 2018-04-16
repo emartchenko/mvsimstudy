@@ -10,37 +10,34 @@ test_single_scenario_simulation(num_samples_trt = NULL,
   p_adjust = NULL)
 }
 \arguments{
-\item{num_samples_trt}{PARAM_DESCRIPTION, Default: NULL}
+\item{num_samples_trt}{Number of samples in group 1. Default: NULL}
 
-\item{num_samples_control}{PARAM_DESCRIPTION, Default: NULL}
+\item{num_samples_control}{Number of samples in group 2. Default: NULL}
 
-\item{num_genes}{PARAM_DESCRIPTION, Default: NULL}
+\item{num_genes}{Number of features being tested. Default: NULL}
 
-\item{means}{PARAM_DESCRIPTION, Default: NULL}
+\item{means}{A vector of the means for each feature. Default: NULL}
 
-\item{delta}{PARAM_DESCRIPTION, Default: NULL}
+\item{delta}{An effect_size object containing a vector of effects.
+Default: NULL}
 
-\item{cor_matrix}{PARAM_DESCRIPTION, Default: NULL}
+\item{cor_matrix}{A matrix specifying the correlations. Default: NULL}
 
-\item{num_reps}{PARAM_DESCRIPTION, Default: 1000}
+\item{num_reps}{Number of iterations of the simulation overall. Default: 1000}
 
-\item{method}{PARAM_DESCRIPTION, Default: NULL}
+\item{method}{Analysis method used. See ?analyze Default: NULL}
 
-\item{p_adjust}{PARAM_DESCRIPTION, Default: NULL}
+\item{p_adjust}{p value adjustment method used. See ?p.adjust Default: NULL}
 }
 \value{
-OUTPUT_DESCRIPTION
+Summary of how long each piece of the simulation runs as well as
+what kind of analysis method used.
 }
 \description{
-FUNCTION_DESCRIPTION
+Sys.time() is used to track how long each piece of the
+simulation needs to run. Please read ?simulate_single_scenario for detailed
+walkthrough of parameters.
 }
 \details{
-DETAILS
-}
-\examples{
-\dontrun{
-if(interactive()){
- #EXAMPLE1
- }
-}
+For testing purposes only.
 }

@@ -1,22 +1,20 @@
 #' @title For run-time testing
-#' @description FUNCTION_DESCRIPTION
-#' @param num_samples_trt PARAM_DESCRIPTION, Default: NULL
-#' @param num_samples_control PARAM_DESCRIPTION, Default: NULL
-#' @param num_genes PARAM_DESCRIPTION, Default: NULL
-#' @param means PARAM_DESCRIPTION, Default: NULL
-#' @param delta PARAM_DESCRIPTION, Default: NULL
-#' @param cor_matrix PARAM_DESCRIPTION, Default: NULL
-#' @param num_reps PARAM_DESCRIPTION, Default: 1000
-#' @param method PARAM_DESCRIPTION, Default: NULL
-#' @param p_adjust PARAM_DESCRIPTION, Default: NULL
-#' @return OUTPUT_DESCRIPTION
-#' @details DETAILS
-#' @examples
-#' \dontrun{
-#' if(interactive()){
-#'  #EXAMPLE1
-#'  }
-#' }
+#' @description Sys.time() is used to track how long each piece of the
+#' simulation needs to run. Please read ?simulate_single_scenario for detailed
+#' walkthrough of parameters.
+#' @param num_samples_trt Number of samples in group 1. Default: NULL
+#' @param num_samples_control Number of samples in group 2. Default: NULL
+#' @param num_genes Number of features being tested. Default: NULL
+#' @param means A vector of the means for each feature. Default: NULL
+#' @param delta An effect_size object containing a vector of effects.
+#' Default: NULL
+#' @param cor_matrix A matrix specifying the correlations. Default: NULL
+#' @param num_reps Number of iterations of the simulation overall. Default: 1000
+#' @param method Analysis method used. See ?analyze Default: NULL
+#' @param p_adjust p value adjustment method used. See ?p.adjust Default: NULL
+#' @return Summary of how long each piece of the simulation runs as well as
+#' what kind of analysis method used.
+#' @details For testing purposes only.
 #' @rdname test_single_scenario_simulation
 #' @export
 

@@ -3,7 +3,7 @@ Type: Package
 Title: Multivariate Correlated Data Simulation Tools
 Version: 0.1.0
 Author: Ekaterina Martchenko
-Maintainer: Rob
+Maintainer: Rob Balshaw <Robert.Balshaw@umanitoba.ca>
 Description: This package allows you to simulate a two group experiment with
         a specified number of correlated featured, meant to represent an omics
         dataset. The package comes with functions to create a customized 
