@@ -1,0 +1,41 @@
+Package: mvsimstudy
+Type: Package
+Title: Multivariate Correlated Data Simulation Tools
+Version: 0.1.0
+Author: Ekaterina Martchenko
+Maintainer: Rob
+Description: This package allows you to simulate a two group experiment with
+        a specified number of correlated featured, meant to represent an omics
+        dataset. The package comes with functions to create a customized 
+        correlation matrix with strong, medium, weak or no correlation as well
+        as background correlation amongst all features. There are a few options
+        available for analysis after data generation which can be found in the 
+        ?analyze documentation. The probability of selecting features which are
+        specified to have effects (effect size specified by user) is summarized
+        and returned as part of a list when the single_scenario_simulation 
+        function is run. Options to adjust the number of repetitions completed 
+        by the simulation, alpha adjustment function (see ?set.alpha), and a
+        function for run-time testing are are included. 
+License: Nope
+Encoding: UTF-8
+LazyData: true
+Imports: tidyr,
+    dplyr,
+    purrr,
+    broom,
+    stringr,
+    MASS,
+    corpcor,
+    Matrix,
+    glmnet,
+    ROCR
+Depends: corpcor,
+      MASS,
+      tidyr,
+      dplyr,
+      purrr,
+      broom,
+      Matrix,
+      glmnet,
+      ROCR
+RoxygenNote: 6.0.1
