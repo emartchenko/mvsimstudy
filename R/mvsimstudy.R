@@ -17,30 +17,29 @@
 #' Please see documentation for more details.
 #'
 #' @examples
+#' 
 #' A single scenario, uncorrelated data analyzed with 'one feature at a time'
 #' method
-#' \dontrun{
-#' if(interactive()){
+#' 
 #' set.alpha(0.05)
 #' e <- effect_size(c(0.3, 0, 0.7))
 #' single_scenario_simulation(num_samples_trt = 80, num_samples_control= 95, delta = e, method="ofaat")
-#'   }
-#' }
+#'   
+#' 
 #'
 #' A single scenario, correlated data analyzed with lasso method
-#' \dontrun{
-#' if(interactive()){
+#' 
+#' 
 #' set.alpha(0.05)
 #' e <- effect_size(c(rep(0.3, 10), rep(0, 60), rep(0.1, 30), rep(0, 20), rep(0.7, 10)))
 #' corr_structure <- create_cor_matrix(130, strong = 15, med = 10, weak = 90)
 #' single_scenario_simulation(num_samples_trt = 30, num_samples_control= 30,
 #' delta = e, cor_matrix = corr_structure, method="lasso")
-#'   }
-#' }
+#'   
+#' 
 #'
 #' Multiple scenarios, variable sample sizes
-#'  \dontrun{
-#' if(interactive()){
+#'  
 #' set.alpha(0.05)
 #'
 #' e <- effect_size(c(0, 0.7, 0.3))
@@ -51,8 +50,8 @@
 #'
 #' simulate_scenarios(effect_list, sample_size_list
 #' cor_matrix = corr_structure, method="lasso")
-#'   }
-#' }
+#'   
+#' 
 #' @seealso \code{\link{set.alpha}} for additional information
 #' @seealso \code{\link{single_scenario_simulation}}
 #' @seealso \code{\link{simulate_scenarios}}

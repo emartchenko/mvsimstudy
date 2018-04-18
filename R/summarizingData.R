@@ -16,15 +16,14 @@
 #' @details Best used from within the simulation functions to avoid any
 #' confusion with arguments.
 #' @examples
-#' \dontrun{
-#' if(interactive()){
+#' 
 #' set.alpha(0.05)
 #' e <- effect_size(c(0.3, 0, 0.7))
 #' example <- generate_data(50, 50, c(1, 2, 3), c(0.3, 0, 0.7))
 #' analyzed_example <- analyze(example, method= "ofaat")
 #' summarized_example <- summary(analyzed_example, e, "ofaat")
-#' }
-#' }
+#' 
+#' 
 #' @seealso
 #'  \code{\link[dplyr]{select}}
 #' @rdname summary

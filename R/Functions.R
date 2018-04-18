@@ -26,7 +26,7 @@ set.alpha <- local(function(alpha) {
 #'
 #' @return A dataframe which summarizes the results of each scenario that has been run
 #'
-#'  @section Notes:
+#' @section Notes:
 #' List arguments must be passed as lists, even if only 1 item in the list.
 #' If differing lists are not passed for list_treatment_groups and list_control_groups
 #' arguments then default equal treatment/control group sizes assigned. However, at least one size
