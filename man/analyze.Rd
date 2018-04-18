@@ -38,13 +38,12 @@ shapes. Each analysis method has a slightly different return dataframe. This
 method is designed to be used inside the simulation.
 }
 \examples{
-\dontrun{
-if(interactive()){
+
  set.alpha(0.05)
  example <- generate_data(50, 50, c(1,2,3), c(0.3, 0, 0.7))
  analyzed1 <- analyze(example, method="ofaat", p_adjust="bonferroni")
  analyzed2 <- analyze(example, method="mv_glm")
  analyzed3 <- analyze(example, method="lasso")
- }
-}
+ 
+
 }

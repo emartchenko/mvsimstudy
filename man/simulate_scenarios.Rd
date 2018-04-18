@@ -27,18 +27,20 @@ simulate_scenarios(list_effect_sizes = NULL, list_treatment_groups = NULL,
 }
 \value{
 A dataframe which summarizes the results of each scenario that has been run
+}
+\description{
+Simulates scenarios with varying effect sizes or sample sizes; can accomodate
+differing numbers of samples per treatment and control groups
+}
+\section{Notes}{
 
- @section Notes:
 List arguments must be passed as lists, even if only 1 item in the list.
 If differing lists are not passed for list_treatment_groups and list_control_groups
 arguments then default equal treatment/control group sizes assigned. However, at least one size
 list must be passed.
 Method must be specified.
 }
-\description{
-Simulates scenarios with varying effect sizes or sample sizes; can accomodate
-differing numbers of samples per treatment and control groups
-}
+
 \examples{
 e <- effect_size(c(0.7, 0.2, 0.4))
 list_e <- c(e)
